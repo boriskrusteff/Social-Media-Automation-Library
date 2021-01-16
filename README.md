@@ -9,8 +9,7 @@ Requirements:
   https://www.python.org/downloads/release/python-384/
   
   3. Install requirements.txt with
-      Usage:
-        pip3 install -r requirements.txt
+  pip3 install -r requirements.txt
   
   4. Examples in main.py
  
