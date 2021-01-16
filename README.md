@@ -2,7 +2,7 @@
 Automator for Instagram Facebook etc
 
 Requirements:
-  1. Install chrome-driver from down link
+  1. Install chrome-driver from link
   https://chromedriver.chromium.org/downloads
   
   2. Python 3.8 installed
