@@ -8,42 +8,6 @@ Requirements:
   2. Python 3.8 installed
   
   3. requirements.txt installed
- 
-Usage:
-  Instagram Automator:
-  
-    import auto_instagram
-    
-    instagramer = auto_instagram.Instagram_Automator()
-    instagramer.login("your email or phone", "your password")
-    instagramer.find_person("person you wanna find")
-    instagramer.send_message("message content")
-    instagramer.exit_instagram()
-      
-  
-  FB_Messenger Automator:
-  
-    import auto_fbmessenger
-
-    fbmessengera = auto_fbmessenger.Messenger_Automator()
-    fbmessengera.login("Your email or phone", "Your password")
-    fbmessengera.send_message("Person you wanna send message", "Message content")
-    fbmessengera.exit_fbmessenger()
-    
-    
- Facebook Automator:
- 
-  import auto_facebook
-  facebooker = auto_facebook.Facebook_Automator()
-  facebooker.login("Your email or phone", "Your password")
-  facebooker.find_peoples("Person you wanna find")
-  time.sleep(10)
-  facebooker.exit_facebook()
-  
-  
-  
-  
-  
   
   All Methods on Instagram Automator are:
       ->login("email or phone", "password") # require to continue use next methods
@@ -70,4 +34,34 @@ Usage:
     ->find_places("Place name")
     ->find_groups("Group name")
     ->exit_facebook()
+ 
+Usage:
+  Instagram Automator:
+  
+    import auto_instagram
     
+    instagramer = auto_instagram.Instagram_Automator()
+    instagramer.login("your email or phone", "your password")
+    instagramer.find_person("person you wanna find")
+    instagramer.send_message("message content")
+    instagramer.exit_instagram()
+      
+  
+  FB_Messenger Automator:
+  
+    import auto_fbmessenger
+
+    fbmessengera = auto_fbmessenger.Messenger_Automator()
+    fbmessengera.login("Your email or phone", "Your password")
+    fbmessengera.send_message("Person you wanna send message", "Message content")
+    fbmessengera.exit_fbmessenger()
+    
+    
+  Facebook Automator:
+ 
+    import auto_facebook
+    facebooker = auto_facebook.Facebook_Automator()
+    facebooker.login("Your email or phone", "Your password")
+    facebooker.find_peoples("Person you wanna find")
+    time.sleep(10)
+    facebooker.exit_facebook()
