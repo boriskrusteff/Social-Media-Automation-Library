@@ -19,23 +19,25 @@ class Messenger_Automator:
         password.send_keys(fb_password)
         login_button = self.browser.find_element_by_xpath('//*[@id="loginbutton"]')
         login_button.click()
-        time.sleep(3)
+        time.sleep(5)
 
     def send_message(self, username, message):
         search_area = self.browser.find_element_by_xpath(
             "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div/div/div/label/input")
         search_area.send_keys(username)
         time.sleep(5)
-        first_result = self.browser.find_element_by_xpath(
-            "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/ul/div[1]/li/div/a/div/div[2]/div/div/span/span/span")
+        first_result = self.browser.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[2]/div/div/div[1]/div[1]/div/div/div[1]/ul/div[1]/li/div/a/div/div[2]/div/div/span/span/span")
         first_result.click()
         time.sleep(3)
-        message_box = self.browser.find_element_by_xpath(
-            "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div/div[2]/div/form/div/div[3]/div[2]/div[1]/div/div")
+        message_box = self.browser.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div/div[2]/div/form/div/div[3]/div[2]/div[1]/div/div")
         message_box.click()
         actions = ActionChains(self.browser)
         actions.send_keys(message)
         actions.perform()
-        send_button = self.browser.find_element_by_xpath(
-            "/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div/div[2]/div/form/div/div[3]/span[2]/div")
+        time.sleep(1)
+        send_button = self.browser.find_element_by_xpath("/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div/div/div/div/div[1]/div[2]/div/div/div/div[2]/div/form/div/div[3]/span[2]")
         send_button.click()
+        time.sleep(2)
+
+    def exit_fbmessenger(self):
+        self.browser.close()
