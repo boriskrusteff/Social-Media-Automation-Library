@@ -7,11 +7,14 @@ Requirements:
   
   2. Python 3.8 installed
   
-  3. requirements.txt installed
+  3. install requirements.txt with
+      Usage:
+        pip3 install -r requirements.txt
   
-  4.Examples in main.py
+  4. Examples in main.py
  
-  5.Have a prosperous day!!!
+  5. Have a prosperous day!!!
+  
   All Methods on Instagram Automator are:
       ->login("email or phone", "password") # require to continue use next methods
       ->find_person("Person ") # require to continue to use send_message
