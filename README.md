@@ -5,9 +5,9 @@ Requirements:
   1. Install chrome-driver from link
   https://chromedriver.chromium.org/downloads
   
-  2. Python 3.8 installed
+  2. Python 3.8 installed https://www.python.org/downloads/release/python-384/
   
-  3. install requirements.txt with
+  3. Install requirements.txt with
       Usage:
         pip3 install -r requirements.txt
   
