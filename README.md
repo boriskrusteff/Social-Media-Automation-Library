@@ -1,4 +1,4 @@
-# SPL
+# Social Media Automation Library
 Automator for Instagram Facebook etc
 
 Requirements:
